@@ -1,0 +1,27 @@
+{
+  "name": "vast-node",
+  "version": "0.0.1",
+  "description": "node pro for learn",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npx nodemon src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yayxs/vast-node.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "vast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yayxs/vast-node/issues"
+  },
+  "homepage": "https://github.com/yayxs/vast-node#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mysql2": "^2.3.2",
+    "sequelize": "^6.7.0"
+  }
+}
