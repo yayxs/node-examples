@@ -1,9 +1,14 @@
 const { createServer } = require('http')
+const url = require('url')
 const { Sequelize, DataTypes } = require('sequelize')
 
 const { DB_HOST, DB_USER, DB_PASS } = require('dotenv').config().parsed
 
-const server = createServer((req, res) => {})
+const server = createServer((req, res) => {
+  console.log('req', req)
+  const { url: reqUrl } = req // "/register?username=admin&password=123456"
+  const myUrl = url.parse(reqUrl)
+})
 
 const sequelize = new Sequelize('vast_h5_temp', DB_USER, DB_PASS, {
   host: DB_HOST,
@@ -46,8 +51,10 @@ const User = sequelize.define(
 ;(async () => {
   await sequelize.sync({ force: true })
   const admin = await User.create({ username: 'admin', password: 'admin' })
-  console.log('admin', admin)
+  // console.log('admin', admin)
 })()
-server.listen(3000, '127.0.0.1', () => {
-  console.log('http://127.0.0.1:3000')
+
+// 注册
+server.listen(2022, '127.0.0.1', () => {
+  console.log('http://127.0.0.1:2022')
 })

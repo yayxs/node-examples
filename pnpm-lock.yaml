@@ -6,11 +6,16 @@ specifiers:
   sequelize: ^6.7.0
 
 dependencies:
-  dotenv: registry.nlark.com/dotenv/10.0.0
+  dotenv: 10.0.0
   mysql2: registry.npmmirror.com/mysql2/2.3.2
   sequelize: registry.npmmirror.com/sequelize/6.7.0_mysql2@2.3.2
 
 packages:
+
+  /dotenv/10.0.0:
+    resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
+    engines: {node: '>=10'}
+    dev: false
 
   /ms/2.1.2:
     resolution: {integrity: sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=, tarball: https://registry.npm.taobao.org/ms/download/ms-2.1.2.tgz}
@@ -41,13 +46,6 @@ packages:
     name: denque
     version: 2.0.1
     engines: {node: '>=0.10'}
-    dev: false
-
-  registry.nlark.com/dotenv/10.0.0:
-    resolution: {integrity: sha1-PUInuPuV+BCWzdK2ZlP7LHCFuoE=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/dotenv/download/dotenv-10.0.0.tgz}
-    name: dotenv
-    version: 10.0.0
-    engines: {node: '>=10'}
     dev: false
 
   registry.nlark.com/iconv-lite/0.6.3:
