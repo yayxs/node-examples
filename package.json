@@ -1,10 +1,7 @@
 {
-  "name": "vast-node",
+  "name":"node-docs",
   "version": "0.0.1",
-  "description": "node pro for learn",
-  "main": "main.js",
   "scripts": {
-    "dev": "npx nodemon src/main.js"
   },
   "repository": {
     "type": "git",
