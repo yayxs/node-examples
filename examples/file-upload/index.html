@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="file" name="" id="fileInput" />
+    <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+    <script>
+      const fileInput = document.getElementById('fileInput')
+
+      async function formData() {
+        const data = new FormData()
+
+        data.set('name', 'name')
+        data.set('age', 12)
+        data.set('aaa', fileInput.files[0])
+        const res = await axios.post('http://localhost:3333/aaa', data)
+        console.log('res', res)
+      }
+      fileInput.onchange = formData
+    </script>
+  </body>
+</html>
