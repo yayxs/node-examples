@@ -1,3 +1,5 @@
+const is = module.exports === exports
+console.log(is)
 // __dirname
 // __filename
 // exports
